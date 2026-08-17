@@ -1,44 +1,38 @@
-
-// classe main do programa
+// classe principal do programa
 public class Main {
 
-    // função principal
-    public static void main(String[] args){
+    // metodo principal
+    public static void main(String[] args) {
 
-       // cria uma lâmpada usando o construtor sem parâmetro
-       // resultado: apagada, potência = 60 w
-       Lampada l1 = new Lampada();
+        // cria uma lampada usando o construtor sem parametros
+        // resultado: apagada e potencia de 60W
+        Lampada l1 = new Lampada();
 
-       // Ccia uma lâmpada com potência definida de 100 w
-       // resultado: apagada, potência = 100 w
-       Lampada l2 = new Lampada(100);
+        // cria uma lampada com potencia definida de 100W
+        // resultado: apagada e potencia de 100W
+        Lampada l2 = new Lampada(100);
 
-       // cria uma lâmpada com estado inicial ligado (true)
-       // resultado: acesa, potência = 60 w
-       Lampada l3 = new Lampada(true);
+        // cria uma lampada com estado inicial ligado
+        // resultado: acesa e potencia de 60W
+        Lampada l3 = new Lampada(true);
 
-       // mostra o estado inicial da lâmpada l1
-       l1.mostrarEstado();
+        // testa a primeira lampada
+        System.out.println("=== Lampada 1 ===");
+        l1.mostrarEstado();
+        l1.interruptor();
 
-       // liga/desliga a lâmpada l1 (troca o estado)
-       l1.interruptor();
+        System.out.println("----------------");
 
-     
-       System.out.println("----------------");
+        // testa a segunda lampada
+        System.out.println("=== Lampada 2 ===");
+        l2.mostrarEstado();
+        l2.interruptor();
 
-       // mostra o estado inicial da lâmpada l2
-       l2.mostrarEstado();
+        System.out.println("----------------");
 
-       // liga/desliga a lâmpada l2
-       l2.interruptor();
-
-    
-       System.out.println("----------------");
-
-       // mostra o estado inicial da lâmpada l3
-       l3.mostrarEstado();
-
-       // liga/desliga a lâmpada l3
-       l3.interruptor();
+        // testa a terceira lampada
+        System.out.println("=== Lampada 3 ===");
+        l3.mostrarEstado();
+        l3.interruptor();
     }
 }
