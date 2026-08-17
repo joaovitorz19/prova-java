@@ -1,4 +1,4 @@
-package Estudante;
+package exercicio2;
 
 public class Main {
     
