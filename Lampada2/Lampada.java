@@ -1,55 +1,60 @@
-// declara a classe Lampada
+// declaracao da classe Lampada
 public class Lampada {
 
-    // atributo que vai indicar se a lâmpada está acesa ou apagada 
+    // atributo que indica se a lampada esta acesa ou apagada
     private boolean acesa;
 
-    // atributo que representa a potência da lâmpada 
+    // atributo que representa a potencia da lampada
     private int potencia;
 
-    // construtor sem parâmetros.
-    // define a lâmpada como apagada e com potência de 60 w.
+    // construtor sem parametros
+    // cria uma lampada apagada com potencia padrao de 60W
     public Lampada() {
         this.acesa = false;
         this.potencia = 60;
     }
 
-    // construtor que recebe a potência como parâmetro
-    // A lâmpada começa apagada, mas com a potência informada
+    // construtor que recebe a potencia
+    // cria uma lampada apagada com a potencia informada
     public Lampada(int potencia) {
         this.acesa = false;
         this.potencia = potencia;
     }
 
-    // construtor que vai receber o estado inicial
-    // define a potência padrão como 60W
+    // construtor que recebe o estado inicial
+    // utiliza a potencia padrao de 60W
     public Lampada(boolean estadoInicial) {
         this.acesa = estadoInicial;
-        this.potencia = 60; // valor padrão
+        this.potencia = 60;
     }
 
-    // função que simula o interruptor 
+    // metodo que simula o interruptor da lampada
     public void interruptor() {
 
-        // inverte o estado atual da lâmpada
+        // inverte o estado atual
         acesa = !acesa;
 
-        // verifica o estado e informa  uma mensagem com a potência
+        // mostra o novo estado da lampada
+        mostrarEstado();
+    }
+
+    // metodo que mostra o estado atual da lampada
+    public void mostrarEstado() {
+
         if (acesa) {
-            System.out.println("A lâmpada de " + potencia + " está ligada");
+            System.out.println("A lampada de " + potencia + "W esta ligada.");
         } else {
-            System.out.println("A lâmpada de " + potencia + " está desligada");
+            System.out.println("A lampada de " + potencia + "W esta desligada.");
         }
     }
 
-    // função que mostra o estado atual da lâmpada sem alterar nada
-    public void mostrarEstado() {
+    // retorna o estado atual da lampada
+    public boolean isAcesa() {
+        return acesa;
+    }
 
-        // verifica se está acesa ou apagada e imprime a mensagem
-        if (acesa) {
-            System.out.println("A lâmpada de " + potencia + " está ligada");
-        } else {
-            System.out.println("A lâmpada de " + potencia + " está desligada");
-        }
+    // retorna a potencia da lampada
+    public int getPotencia() {
+        return potencia;
     }
 }
