@@ -60,4 +60,6 @@ public class Estudante {
         posicao ++;
     }
   }
+  return aprovados;
+}
 }
