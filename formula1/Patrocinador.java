@@ -31,10 +31,10 @@ public class Patrocinador {
         return valorPatrocinio;
     }
 
-    // metodo para exibir os dados do patrocinador
-    public void exibir() {
+   // metodo para exibir os dados do patrocinador
+public void exibir() {
 
-        // exibe o nome e o valor do patrocinio
-        System.out.println("Patrocinador: " + nome + " - Valor: " + valorPatrocinio);
-    }
+    // exibe o nome e o valor do patrocinio formatado
+    System.out.printf("Patrocinador: %s - Valor: R$ %.2f%n", nome, valorPatrocinio);
+}
 }

@@ -35,14 +35,14 @@ public class CarroF1 {
         // exibe o numero do carro
         System.out.println("Número do carro: " + numero);
 
-        // exibe a posicao do carro
+        // Exibe a posicao do carro
         System.out.println("Posição: " + posicao);
 
         // exibe os dados do piloto
         System.out.println("\nDados do piloto:");
         piloto.exibir();
 
-        // exibe os dados da equipe
+        // Exibe os dados da equipe
         System.out.println("\nDados da equipe:");
         equipe.exibir();
     }

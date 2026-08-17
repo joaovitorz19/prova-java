@@ -22,6 +22,20 @@ public class Piloto {
         // atribui a nacionalidade recebida ao atributo nacionalidade
         this.nacionalidade = nacionalidade;
     }
+    // metodo que retorna o nome do piloto
+public String getNome() {
+    return nome;
+}
+
+// metodo que retorna a idade do piloto
+public int getIdade() {
+    return idade;
+}
+
+// metodo que retorna a nacionalidade do piloto
+public String getNacionalidade() {
+    return nacionalidade;
+}
 
     // metodo para exibir os dados do piloto
     public void exibir() {

@@ -23,14 +23,14 @@ public class Main {
             patrocinadoresFerrari
         );
 
-        // cria o piloto da equipe
+        // Cria o piloto da equipe
         Piloto pilotoFerrari = new Piloto(
             "Charles Leclerc",
             26,
             "Monegasco"
         );
 
-        // cria o carro de formula 1 com numero, posicao, equipe e piloto
+        // Cria o carro de formula 1 com numero, posicao, equipe e piloto
         CarroF1 carroFerrari = new CarroF1(
             16,
             1,
