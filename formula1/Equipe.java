@@ -26,7 +26,7 @@ public class Equipe {
     // metodo para exibir os dados da equipe
     public void exibir() {
 
-        // exibe o nome da equipe
+        // Exibe o nome da equipe
         System.out.println("Equipe: " + nome);
 
         // exibe o ano de fundacao da equipe
@@ -38,7 +38,7 @@ public class Equipe {
         // percorre o vetor de patrocinadores
         for (Patrocinador p : patrocinadores) {
 
-            // chama o metodo para exibir os dados do patrocinador
+            // Chama o metodo para exibir os dados do patrocinador
             p.exibir();
         }
     }
