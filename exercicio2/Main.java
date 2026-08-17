@@ -12,4 +12,12 @@ public class Main {
      estudante2.insereNotas();
 
      System.out.println("\n--- RESULTADOS ---");
+     
+     System.out.println ("ALuno:" + estudante1.getNome());
+     System.out.println("Média" + estudante1.calculaMedia());
+     System.out.println ("Menor nota:" + estudante1.menorNota());
+
+     System.out.println();
+
+     
 }
