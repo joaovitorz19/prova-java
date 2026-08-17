@@ -1,34 +1,35 @@
 package Lampada3;
-// classe principal
 
+// classe principal do programa
 public class Main {
 
-    public static void main(String[] args){
+    // metodo principal
+    public static void main(String[] args) {
 
-        // cria uma lâmpada com valores padrão
+        // cria uma lampada com valores padrao
         Lampada l1 = new Lampada();
 
-        // define a potência para 150 
+        // define a potencia para 150W
         l1.setPotencia(150);
 
-        // exibe a potência atual
-        System.out.println("Potencia: " + l1.getPotencia());
+        // exibe a potencia atual
+        System.out.println("Potencia: " + l1.getPotencia() + "W");
 
-        // mostra estado inicial
+        // mostra o estado inicial da lampada
         l1.mostrarEstado();
 
-        // liga/desliga
+        // altera o estado da lampada
         l1.interruptor();
-
-        // mostra novo estado
-        l1.mostrarEstado();
 
         System.out.println("----------------");
 
-        // tenta definir potência inválida
+        // tenta definir uma potencia invalida
         l1.setPotencia(5000);
 
-        // mostra a potência 
-        System.out.println("Potencia: " + l1.getPotencia());
+        // mostra a potencia depois da tentativa
+        System.out.println("Potencia atual: " + l1.getPotencia() + "W");
+
+        // verifica se a lampada esta acesa
+        System.out.println("Lampada acesa: " + l1.isAcesa());
     }
 }
