@@ -3,9 +3,9 @@ package exercicio2;
 public class Main {
      public static void main (String[]args){
         Estudante estudante1 = new Estudante("João");
-        Estudante estudante2 =new estudante("Maria");
-     }
-     System.out.println("Digite as notas de ") + estudante1.getNome());
+        Estudante estudante2 =new Estudante("Maria");
+     
+     System.out.println("Digite as notas de " + estudante1.getNome());
      estudante1.insereNotas();
 
      System.out.println("\nDigite as notas de " + estudante2.getNome());
@@ -19,5 +19,8 @@ public class Main {
 
      System.out.println();
 
-     
+     System.out.println("Aluno :" + estudante2.getNome());
+     System.out.println("Média: " + estudante2.calculaMedia());
+     System.out.println("Menor nota:" + estudante2.menorNota());
+    }
 }
