@@ -10,7 +10,7 @@ public class Lampada {
         acesa = estadoInicial; // Define o estado inicial da lâmpada
     }
 
-    // função que vai funcionar como um interruptor (liga/desliga)
+    // Função que vai funcionar como um interruptor (liga/desliga)
     public void interruptor() {
         acesa = !acesa; // Inverte o estado atual (se estava ligada, desliga e vice-versa)
 
@@ -22,7 +22,7 @@ public class Lampada {
         }
     }
 
-    // função que verifica o estado atual da lâmpada
+    // Função que verifica o estado atual da lâmpada
     public void estado() {
         if (acesa) {
             System.out.println("A lampada esta acesa"); // informa se está ligada
@@ -31,7 +31,7 @@ public class Lampada {
         }
     }
 
-    // função que também exibe o estado da lâmpada 
+    // Função que também exibe o estado da lâmpada 
     public void exibirEstado() {
         if (acesa) {
             System.out.println("A lampada esta acesa"); // informa se está ligada
