@@ -13,6 +13,19 @@ public class Main {
                 System.out.println(" \n Notas de " + estudantes[i].getNome());
                 estudantes[i].insereNotas();
             }
-       
+        Estudante[] aprovados = Estudante.aprovados(estudantes);
+        System.out.println("\n ---Aprovados ---");
+        if(aprovados == null) {
+            System.out.println("Nenhum estudante foi aprovado.");
+
+        }
+        else{
+            for(int i=0; i< aprovados.length; i++){
+                System.out.println(aprovados[i].getNome()
+                + "- Média:"
+                + aprovados[i].calculaMedia()
+                );
+            }
+        }
         }
 }
