@@ -17,4 +17,12 @@ public class Estudante {
 
         }
     }
+    public double calculaMedia() {
+        double soma=0;
+        for(double nota : notas){
+            soma +=nota;
+        }
+        return soma/ notas.length;
+    }
+
 }
