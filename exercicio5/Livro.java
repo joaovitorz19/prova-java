@@ -14,6 +14,19 @@ public class Livro extends Publicacao {
         }
         else System.out.println("Livro já esta disnopivel.");
     }
-    }
+    
+   public void devolver(){
+    if(!disponivel){
+        disponivel = true;
+        System.out.println("Livro devolvido com sucesso.");
 
+    } 
+    else{
+        System.out.println("Livro já esta disponivel.");
+
+    }
+   }
+   public boolean isDisponivel(){
+    return disponivel;
+   }
 }
