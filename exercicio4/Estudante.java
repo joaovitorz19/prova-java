@@ -10,6 +10,11 @@ public class Estudante {
         this.notas= new double[5];
     }
     public void insereNotas() {
-        
+        Scanner scanner = new Scanner(System.in);
+        for(int i =0;i< notas.length; i++){
+            System.out.print("Digite a nota" + (i+1) + ":");
+            notas[i] = scanner.nextDouble();
+
+        }
     }
 }
