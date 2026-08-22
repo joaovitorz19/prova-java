@@ -14,6 +14,9 @@ public class Main {
         livro.devolver();
         System.out.println("Disponivel:" + livro.isDisponivel());
         System.out.println("-----------");
+
+        System.out.println("Periodico :" + periodico.gettitulo());
+        System.out.println("Volume :" + periodico.getNumeroVolume());
         
 
     }
